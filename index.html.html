@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="pluggins/bootstrap.css">
+</head>
+<body>
+<div class="container">
+	<div class="row" style="margin-top: 3%">
+		<div class="col-sm-8 col-sm-offset-2 jumbotron">
+			<h2 class="text-center">MindPowerDeck Classroom!</h2>
+			<p>This classroom was made to teach you to use Mind Power Deck by John Kennedy.</p>
+			<p>Everything is set up for you to simulate figuring out the seen card.</p>
+			<p>Ask if the card is High or Low by pressing button 1 and button 2 for red or black.</p>
+			<p>Then make your guess in the box</p>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8 col-md-2 col-md-offset-3">
+			<div id="RBButton" class="btn btn-lg btn-primary">Red or Black?</div>
+		</div>
+		<div class="col-sm-8 col-md-2">
+			<div id="HLButton" class="btn btn-lg btn-primary">High or Low?</div>
+		</div>
+		<div class="col-sm-8 col-md-2">
+			<div id="OEButton" class="btn btn-lg btn-primary">Odd or Even?</div>
+		</div>
+	</div>
+	<div class="input-group col-sm-4 col-md-6 col-md-offset-3" style="margin-top: 6px;">
+  		<input type="text" class="form-control" id="theGuess">
+  		<span class="input-group-btn">
+    		<button id="guessButton" class="btn btn-success" type="button">Check Answer!</button>
+  		</span>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="scripts/MindPowerClassroom.js"></script>
+</html>
