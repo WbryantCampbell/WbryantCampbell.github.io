@@ -3,19 +3,49 @@
 <head>
 	<title></title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<style type="text/css">
+	@font-face { font-family: magic; src: url('fonts/DYNAMO magician.ttf'); } 
+	h1 {
+		font-family: magic;
+	}
+</style>
 </head>
 <body>
 <div class="container">
 	<div class="row" style="margin-top: 3%">
-		<div class="col-sm-8 col-sm-offset-2 jumbotron">
-			<h2 class="text-center">MindPowerDeck Classroom!</h2>
+		<div>
+		<div class="jumbotron">
+			<h1 class="text-center">MIND POWER DECK CLASSROOM</h1>
 			<p>This classroom was made to teach you to use Mind Power Deck by John Kennedy.</p>
 			<p>Everything is set up for you to simulate figuring out the seen card.</p>
 			<p>Press the button to ask the question and get your response.</p>
-			<p>Then give your answer in the final box.</p>	
+			<p>Then give your answer in the final box. Please type out the cards full name</p>
+			<p>ex. <strong>King of Diamonds</strong></p>	
+		</div> 
+		<div class="row">          
+				  <table class="table table-responsive">
+				    <tbody>
+				      <tr>
+				        <td class="text-center"><div id="RBButton" class="btn btn-lg btn-primary">Red or Black?</div></td>
+				        <td class="text-center"><div id="HLButton" class="btn btn-lg btn-primary">High or Low?</div></td>
+				        <td class="text-center"><div id="OEButton" class="btn btn-lg btn-primary">Odd or Even?</div></td>
+				      </tr>
+				    </tbody>
+				</table>
+	  	</div>
+	  	<div class="input-group col-sm-4 col-md-6 col-md-offset-3" style="margin-top: 6px;">
+  			<input type="text" class="form-control" id="theGuess">
+	  		<span class="input-group-btn">
+	    		<button id="guessButton" class="btn btn-success" type="button">Check Answer!</button>
+	  		</span>
 		</div>
+		
+
+
+
+
 	</div>
-	<div class="row">
+<!-- 	<div class="row container-fluid">
 		<div class="col-sm-8 col-md-2 col-md-offset-3">
 			<div id="RBButton" class="btn btn-lg btn-primary">Red or Black?</div>
 		</div>
@@ -31,7 +61,9 @@
   		<span class="input-group-btn">
     		<button id="guessButton" class="btn btn-success" type="button">Check Answer!</button>
   		</span>
-	</div>
+	</div> -->
+	
+</div>
 </div>
 </body>
 <script type="text/javascript" src="scripts/MindPowerClassroom.js"></script>
